@@ -1,44 +1,59 @@
 import {
-    CustomerReviews,
-    Hero,
-    PopularProducts,
-    SuperQuality,
-    Services,
-    SpecialOffer, 
-    Subscribe,
-    Footer
+  CustomerReviews,
+  Hero,
+  PopularProducts,
+  SuperQuality,
+  Services,
+  SpecialOffer,
+  Subscribe,
+  Footer
 } from './assets/sections/index.js';
 import Nav from './components/Nav.jsx';
 
-
-const App = ( ) => (
+const App = () => (
   <main className="relative bg-white text-black">
+    {/* Navbar */}
     <Nav />
-    <section className="xl:padding-l wide:padding-r padding-1">
+
+    {/* Hero Section */}
+    <section className="w-full py-24 px-6">
       <Hero />
     </section>
-    <section className="padding">
+
+    {/* Popular Products */}
+    <section className="w-full py-24 px-6">
       <PopularProducts />
-    </section> 
-    <section className="padding">
+    </section>
+
+    {/* Super Quality */}
+    <section className="w-full py-24 px-6">
       <SuperQuality />
     </section>
-    <section className="padding">
+
+    {/* Services */}
+    <section className="w-full py-24 px-6 bg-gray-50">
       <Services />
     </section>
-    <section className="padding">
+
+    {/* Special Offer */}
+    <section className="w-full py-24 px-6">
       <SpecialOffer />
     </section>
-    <section className="bg-pale-blue padding">
+
+    {/* Customer Reviews */}
+    <section className="w-full py-24 px-6 bg-pale-blue">
       <CustomerReviews />
     </section>
-    <section className="padding-x sm:py-32 py-16 w-full">
+
+    {/* Subscribe */}
+    <section className="w-full py-24 px-6 bg-gray-100">
       <Subscribe />
     </section>
-    <section className="bg-black padding-x padding-t pb-8">
+
+    {/* Footer */}
+    <section className="w-full py-16 px-6 bg-black text-white">
       <Footer />
     </section>
-    
   </main>
 );
 

@@ -1,8 +1,8 @@
-const SpecialOffer = () => 
-{  return (
-    <div> SpecialOffer</div>
-     
-)
+const SpecialOffer = () => {
+  return (
+    <div>Special Offer </div>
+
+  );
 }
 
 export default  SpecialOffer
