@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
-
+@reference "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -18,8 +18,24 @@
     margin: 0 auto;
   }
 
+
   .input {
-    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+    @apply flex-1 text-base leading-normal text-slate-gray pl-5 outline-none border;
+  }
+
+  @screen sm {
+    .input {
+      flex: 1;
+    }
+  }
+
+  @screen max-sm {
+    .input {
+      width: 100%;
+      padding: 1.25rem; /* same as p-5 */
+      border-color: #6D6D6D; /* matches text-slate-gray */
+      border-radius: 9999px; /* full rounded */
+    }
   }
 }
 
